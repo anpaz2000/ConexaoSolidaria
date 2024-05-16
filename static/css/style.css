@@ -1,0 +1,352 @@
+/* Importa��o de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset de estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* MENU SUSPENSO */
+.cabecalho {
+    padding: 2% 5% 5% 15%;
+    z-index: 2;
+    color: #ffee00;
+    position: fixed;
+    width: 100%;
+    top: 0;
+   z-index: 999; /* Garante que o cabe�alho fica acima de outros elementos */
+}
+.scrolling {
+     background-color: #0d8aff !important; /* Cor dos links durante o scroll */
+}
+.cabecalho__menu__link {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffee00;
+    text-decoration: none;
+    font-style: bold;
+    z-index: 1;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+    position: fixed;
+    left: 10vw;
+    top: 2vh;
+}
+
+.cabecalho__menu__link:hover {
+    color: #ffffff; /* Cor dos links durante o hover */
+}
+
+.light-blue {
+    background-color: #add8e6;
+}
+	
+/* IMAGEM*/
+.img__SobrepostaFundo {
+    background-image: url(/static/img/fundoImgSobreposta_Prancheta\ 1.png);
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+}
+
+/* CORPO */
+body {
+    background: linear-gradient(to bottom, #84d2ff, hsl(168, 53%, 58%));
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 180vh;
+}
+
+header {
+    width: 100vw;
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 15vh 0;
+}
+
+.sobre {
+    background-color: azure;
+    padding: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20em;
+    text-align: center;
+    text-align: justify;
+    color: #333;
+    position: fixed;
+    width: 50vw;
+    margin: 0;
+    left: 10vw;
+    z-index: 1;
+    top: 13vh;
+}
+
+.vetorPessoas {
+    position: fixed;
+    height: 40vh;
+    right: 7vw;
+    bottom: 8vh;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    text-align: justify;
+    color: #000;
+    border: 10vw;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.rodape__texto {
+    font-size: 18px;
+    color: aqua;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    left: 10vw;
+}
+
+/* LOGIN */
+#loginHome {
+    height: 60vh;
+    width: 23vw;
+    float: right;
+    position: fixed;
+    top: 13vh;
+    right: 15vh;
+    position: absolute;
+    z-index: 4;
+}
+
+.form-container {
+    position: static;
+    z-index: 5;
+    max-width: 20vw;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 10px;
+}
+
+.Entrar {
+    color: #0000008d;
+    text-shadow: #000000;
+}
+
+
+/* FORMUL�RIO*/
+/* FORM*/
+.form-box {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(40px);
+    padding: 30px 30px;
+    border-radius: 0 20px 20px 0;
+    position: absolute;
+    top: 99%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    width: 700px; /* largura do formul�rio */
+	height: 710px; /* altura do formul�rio */
+}
+
+/* FORM */
+.form-box h2 {
+    font-size: 30px;
+}
+
+/* FORM */
+.form-box p {
+    font-weight: bold;
+    color: #3D3D3D;
+}
+
+/* FORM */
+.form-box p a {
+    color: #FF008A;
+    text-decoration: none;
+}
+
+/* FORM */
+.form-box form {
+    margin: 20px 0;
+}
+
+/* FORM */
+form .input-group {
+    margin-bottom: 15px;
+}
+
+/* FORM */
+form .input-group label {
+    color: #3D3D3D;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* FORM */
+form .input-group input {
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+
+/* FORM */
+form .input-group input:focus {
+    border-color: #FF008A;
+}
+
+/* FORM BUTTON */
+form .input-group button {
+    width: 100%;
+    height: 47px;
+    background-color: #FF008A;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* PAGINA��O POR ETAPAS */
+.container {
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 20px;
+	 
+}
+/* STEP P�GINAS*/
+.step-card {
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     padding: 20px;
+     margin-bottom: 20px;
+	 
+}
+/* ETAPA CADASTRO */	
+.step-number_one {
+     display: inline-block;
+     margin-right: 10px;
+     background-image: url(/static/img/etapa1.png);
+	 padding: 30px 30px;
+     border-radius: 0 20px 20px 0;
+     position: absolute;
+     top: 55%;
+     left: 46%;
+     transform: translate(-50%, -50%);
+     width: 700px; /* largura do formul�rio */
+	 height: 510px; /* altura do formul�rio */		
+     background-repeat: no-repeat; /* Evita a repeti��o da imagem */	
+}
+
+/* ETAPA MEDICAMENTOS */	
+.step-number_two {
+     display: inline-block;
+     margin-right: 10px;
+     background-image: url(/static/img/etapa2.png);
+	 padding: 30px 30px;
+     border-radius: 0 20px 20px 0;
+     position: absolute;
+     top: 55%;
+     left: 46%;
+     transform: translate(-50%, -50%);
+     width: 700px; /* largura do formul�rio */
+	 height: 510px; /* altura do formul�rio */		
+     background-repeat: no-repeat; /* Evita a repeti��o da imagem */	
+}
+
+/* P�GINA SUCESSO */
+.redirecionado {
+    font-size: 18px;
+    color: #003e78;
+    text-decoration: none;
+    font-style: bold;
+}
+
+/* P�GINA SUCESSO */
+.sucesso {
+    font-size: 32px;
+    color: #011425;
+    text-decoration: none;
+    font-style: bold;
+}
+
+/* BOT�O ENVIAR */
+.submit-button {
+    background-color: #007bff;
+    color: #ffffff; 
+    cursor: pointer; 
+}
+
+/* BOT�O ENVIAR - MUDA DE COR */
+.submit-button:hover {
+    background-color: #2ec70a;
+     color: #ffffff; 
+}
+
+/* LOGIN ERRADO */
+.error_msg {
+    font-size: 15px;
+    color: #ff0000;
+    text-decoration: none;
+    font-style: bold;
+}
+
+/* CONSULTA */
+.consulta_msg {
+    font-size: 15px;
+    color: #000000;
+    text-decoration: none;
+    font-style: bold;
+}
+
+.resultaDaConsulta{
+
+    background-color: azure;
+    padding: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20em;
+    text-align: center;
+    text-align: justify;
+    position: fixed;
+    width: 50vw;
+    margin: 0;
+    left: 10vw;
+    z-index: 1;
+    top: 13vh;
+    overflow-y: auto; 
+    padding: 10px; 
+    
+    
+
+
+}
